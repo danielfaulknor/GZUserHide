@@ -14,11 +14,11 @@ var arr = [ "danielfaulknor" ];
 
 $(document).ready(function() {
     $('a').each(function(i, obj) {
-        	if ($(this).context.className == "subHeading _f_username")
-            {
-                if ($.inArray(obj.text, arr) > -1) {
-                    $(this).closest('tr').replaceWith( '<b>Hidden user removed</b><br />' );
-                }
-            }
+        if ($(this).context.className == "subHeading _f_username")
+        	{
+                	if ($.inArray(obj.text, arr) > -1) {
+                		$(this).closest('tr').replaceWith( '<b>Hidden user removed</b><br />' );
+                	}
+            	}	
 	});
 });
